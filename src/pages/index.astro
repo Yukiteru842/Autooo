@@ -5,31 +5,62 @@ import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<h1>Terms of Service</h1>
-			<p>
-	Last Updated: [03.26.2025]
-	Welcome to PostByAuto. By using our services, you agree to these Terms of Service. If you do not agree, please do not use our service.
-	1. Use of Our Services
-		You must be at least 13 years old to use our app.
-		You agree not to use our app for any illegal or unauthorized purposes.
-	2. Content and Copyright
-		You are responsible for any content uploaded using our service.
-		We do not claim ownership over the videos uploaded to TikTok via our platform.
-	3. Termination
-		We reserve the right to terminate or suspend access to our service at any time for violating these terms.
-	4. Disclaimer
-		Our app is provided "as is," without any warranties of any kind. We are not responsible for any issues arising from using our service.
-		If you have any questions, contact us at nobotechannel@gmail.com
-			</p>
-		</main>
-		<Footer />
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #f4f4f4;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        h1, h2 {
+            color: #2c3e50;
+            text-align: center;
+        }
+        h1:hover, h2:hover {
+            color: #3498db;
+        }
+        p {
+            text-align: justify;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Terms of Service</h1>
+        <p><strong>Last Updated: [03.28.2025]</strong></p>
+        <p>Welcome to PostByAuto. By using our services, you agree to these Terms of Service. If you do not agree, please do not use our service.</p>
+        
+        <h2>1. Use of Our Services</h2>
+        <p>- You must be at least 13 years old to use our app.<br>
+        - You agree not to use our app for any illegal or unauthorized purposes.</p>
+        
+        <h2>2. Content and Copyright</h2>
+        <p>- You are responsible for any content uploaded using our service.<br>
+        - We do not claim ownership over the videos uploaded to TikTok via our platform.</p>
+        
+        <h2>3. Termination</h2>
+        <p>We reserve the right to terminate or suspend access to our service at any time for violating these terms.</p>
+        
+        <h2>4. Disclaimer</h2>
+        <p>Our app is provided "as is," without any warranties of any kind. We are not responsible for any issues arising from using our service.</p>
+        
+        <p>If you have any questions, contact us at nobotechannel@gmail.com.</p>
+    </div>
+</body>
 </html>
